@@ -27,7 +27,7 @@ function PhotosContainer() {
 	const loadAvatar = async () => {
 
 		const res = await AvatarService.getAvatar(username as string);
-
+		console.log({res});
 		if(res)
 			setAvatar(res);
 
